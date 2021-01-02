@@ -53,7 +53,7 @@ app.post('/failure', function(req, res){
     res.redirect('/');
 });
 
-app.listen(8000, function(){
+app.listen(process.env.PORT || 8000, function(){
   console.log("Server running on port 8000");
 });
 
